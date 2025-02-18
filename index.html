@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Laser</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+</head>
+
+<body class="bg-gray-100 ">
+    <!-- Header -->
+
+    <header class="bg-white shadow-md ">
+
+
+        <div class="container px-4 mx-auto py-4">
+            <div class="flex flex-wrap justify-between items-center">
+
+                <!-- Text Content -->
+                <p class="font-light uppercase w-full sm:w-auto mb-4 sm:mb-0 hidden sm:block">Reliable Printer Solutions
+                    in Metro Atlanta.</p>
+
+                <!-- Contact Info Section -->
+                <div class="flex flex-wrap justify-between sm:space-x-6  px-4 font-light w-full sm:w-auto">
+                    <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                        <i class="fa-solid fa-phone text-black-500"></i>
+                        <span>770-682-1655</span>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-4 sm:mb-0 uppercase">
+                        <i class="fa-solid fa-location-dot text-black-500"></i>
+                        <span>#C4 Norcross, GA 30093</span>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                        <i class="fa-solid fa-clock text-black-500"></i>
+                        <span>9.00 am to 5.00 pm</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class=" flex justify-between items-center container px-4 mx-auto pb-4">
+            <div class="flex items-center">
+                <img src="logo.png" alt="SE Laser Logo" class="h-10">
+
+            </div>
+            <nav class="py-3">
+                <ul class="flex space-x-12 font-light">
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white ">ABOUT</a></li>
+                    <div class="relative inline-block group">
+
+                        <button class="flex items-center text-gray-600 hover:text-gray-800">
+                            OUR SERVICES
+                            <i class="fa-solid fa-chevron-down ml-2"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-1 z-10 w-48 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ">
+                            <li class="relative drophover">
+                                <a href="#"
+                                    class="block px-4 py-2  uppercase  transition-all duration-300 ease-in-out overflow-hidden">
+                                    Printer Lease
+                                    <span
+                                        class="absolute inset-0 w-0 h-full  transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+
+                            <li class="relative drophover">
+                                <a href="#"
+                                    class="block px-4 py-2  uppercase  transition-all duration-300 ease-in-out overflow-hidden">
+                                    Copier Lease
+                                    <span
+                                        class="absolute inset-0 w-0 h-full  transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                            <li class="relative drophover">
+                                <a href="#"
+                                    class="block px-4 py-2  uppercase  transition-all duration-300 ease-in-out overflow-hidden">
+                                    Buy Printer
+                                    <span
+                                        class="absolute inset-0 w-full h-full  transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a>
+                    </li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div> -->
+        <div class="flex justify-between items-center container px-4 mx-auto pb-4">
+            <div class="flex items-center">
+                <img src="/assets/logo.png" alt="SE Laser Logo" class="h-16">
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:block py-3">
+                <ul class="flex space-x-12 font-light">
+                    <li><a href="#" class="hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
+                    <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a></li>
+                    <div class="relative inline-block group">
+                        <button class="flex items-center  hover:text-gray-800">
+                            OUR SERVICES
+                            <i class="fa-solid fa-chevron-down ml-2"></i>
+                        </button>
+                        <!-- <ul
+                            class="absolute left-0 mt-1 z-10 w-48 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+                            <li class="relative drophover">
+                                <a href="#"
+                                    class="block px-4 py-2 uppercase transition-all duration-300 ease-in-out overflow-hidden">Printer
+                                    Lease</a>
+                            </li>
+                            <li class="relative drophover">
+                                <a href="#"
+                                    class="block px-4 py-2 uppercase transition-all duration-300 ease-in-out overflow-hidden">Copier
+                                    Lease</a>
+                            </li>
+                            <li class="relative drophover">
+                                <a href="#"
+                                    class="block px-4 py-2 uppercase transition-all duration-300 ease-in-out overflow-hidden">Buy
+                                    Printer</a>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a>
+                    </li>
+                    <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a></li>
+                    <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="hamburger" class="text-gray-600 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden absolute top-0 left-0 w-full bg-white shadow-lg z-10">
+                <ul class="space-y-4 py-4 px-6">
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a></li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a>
+                    </li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section>
+        <div class="bg-image-slider flex items-center justify-center lg:justify-start">
+            <!-- Main content -->
+            <div class="w-full md:w-1/2 bg-gradient flex  justify-center items-center ">
+                <div class="container px-4 w-full md:w-[37rem]">
+                    <h1 class="text-3xl md:text-4xl font-bold py-4 leading-10 text-center md:text-left">
+                        REPAIR & MAINTENANCE SERVICES
+                    </h1>
+                    <p
+                        class="mt-4 text-gray-600 font-light text-lg md:text-xl leading-10 py-4 text-center md:text-left">
+                        We sell a huge range of colour and mono laser and multi-function printers, scanners, wide format
+                        plotters, plus consumables, spare parts, and accessories.
+                    </p>
+                    <div
+                        class="mt-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-between">
+                        <button
+                            class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                            <span
+                                class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-white flex items-center"> READ MORE</span>
+                            <div class="relative separator"></div>
+                            <i class="relative fa-solid fa-plus"></i>
+                        </button>
+                        <button
+                            class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                            <span
+                                class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-white flex items-center"> CONTACT US</span>
+                            <div class="relative separator"></div>
+                            <i class="relative fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Who We Are Section -->
+
+    <section class="py-12 bg-gray-100 container mx-auto px-4">
+        <h2 class="text-4xl text-center headings uppercase">WHO WE ARE</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:gap-10 gap-8 mt-8">
+
+
+            <img src="/assets/about-img.png" alt="Discussion" class="w-full lg:w-[680px] 2xl:w-[566px] mx-auto">
+
+            <div class="flex flex-col justify-center mt-6 lg:mt-0">
+                <h2 class="text-3xl font-bold text-[#265A8D] mb-2">EXCELLENCE IN COPIER & PRINTER SOLUTIONS</h2>
+                <p class="mt-4 text-gray-600 text-xl leading-10 font-light text-justify mb-2">Expert Copier and Printer
+                    Solutions in Atlanta. For over 25 years, SouthEast Laser has been Atlanta’s trusted choice for
+                    expert
+                    copier and printer repair services. Specializing in laser printer and copier repairs, we swiftly
+                    resolve issues like paper jams with our high-quality onsite services. Our rapid response ensures
+                    your business continues to run efficiently.</p>
+                <h4 class="mt-6 text-2xl text-[#265A8D] font-regular mb-2">Need a copier or printer lease?</h4>
+                <p class="mt-4 text-gray-600 text-xl leading-10 font-light mb-6 text-justify">SouthEast Laser offers
+                    comprehensive leasing options, guaranteeing top-quality and efficient solutions for all your office
+                    needs. Choose us for dependable, high-standard repair and leasing services that keep your business
+                    on track.</p>
+                <div class="mt-6 flex flex-col md:flex-row justify-between gap-4">
+                    <!-- Read More Button -->
+                    <button
+                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6 w-full md:w-auto">
+                        <span
+                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-white flex items-center">READ MORE</span>
+                        <div class="relative separator"></div>
+                        <i class="relative fa-solid fa-plus"></i>
+                    </button>
+                    <button
+                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6 w-full md:w-auto">
+                        <span
+                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-white flex items-center">CONTACT US</span>
+                        <div class="relative separator"></div>
+                        <i class="relative fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-12">
+        <h2 class="text-4xl text-center headings uppercase">OUR SERVICES</h2>
+        <div class="bg-image-service flex justify-end">
+            <div class="bg-gradient w-full md:w-1/2 flex justify-center items-center">
+                <div class="space-y-6 bg-gradient ">
+                    <div class="container mx-auto px-4 sm:px-12 py-12">
+                        <!-- Service 1 -->
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <img src="/assets/service-img-1.png" alt="Printer"
+                                class="w-full sm:w-[261px] h-auto sm:h-[186px]">
+                            <div>
+                                <h3 class="font-semibold text-lg">BUY COPIER AND LASER PRINTER</h3>
+                                <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
+                                    Buy Laser Printers & Copiers from SouthEast Laser, Atlanta’s Authorized Dealer.
+                                    Choose from top brands like HP, Canon, and more.
+                                </p>
+                                <hr>
+                                <div class="flex justify-end items-end">
+                                    <button
+                                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                                        <span
+                                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                                        <span class="relative text-white flex items-center">READ MORE</span>
+                                        <div class="relative separator"></div>
+                                        <i class="relative fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="flex flex-col md:flex-row gap-4 py-12">
+                            <img src="/assets/service-img-2.png" alt="Printer"
+                                class="w-full sm:w-[261px] h-auto sm:h-[186px]">
+                            <div>
+                                <h3 class="font-semibold text-lg">PRINTER REPAIR & MAINTENANCE</h3>
+                                <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
+                                    South East Laser has provided expert printer and copier repair for 25 years in Metro
+                                    Atlanta. We offer quick response....
+                                </p>
+                                <hr>
+                                <div class="flex justify-end items-end">
+                                    <button
+                                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                                        <span
+                                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                                        <span class="relative text-white flex items-center">READ MORE</span>
+                                        <div class="relative separator"></div>
+                                        <i class="relative fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <img src="/assets/service-img-3.png" alt="Printer"
+                                class="w-full sm:w-[261px] h-auto sm:h-[186px]">
+                            <div>
+                                <h3 class="font-semibold text-lg">OFFICE EQUIPMENT SUPPLIER</h3>
+                                <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
+                                    Shop for office equipment supplies such as Paper, Printer Ink, and Toners. SouthEast
+                                    Laser supplies trusted brands at everyday low prices.
+                                </p>
+                                <hr>
+                                <div class="flex justify-end items-end">
+                                    <button
+                                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                                        <span
+                                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                                        <span class="relative text-white flex items-center">READ MORE</span>
+                                        <div class="relative separator"></div>
+                                        <i class="relative fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact form  -->
+
+
+    <section class="container  mx-auto px-4 py-12">
+        <div class="bg-[#265A8D] text-white py-12  rounded-lg grid grid-cols-1 lg:grid-cols-2 gap-12 px-12 relative">
+            <div class="relative">
+                <img src="/assets/pinter-contact.png" alt="Printer Support"
+                    class="absolute w-[528px] h-[301px] -top-56 left-1/3 transform -translate-x-1/2">
+                <div class="flex justify-center items-center mt-32">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">FOR ANY KIND OF PRINTER AND COPIER SUPPORT</h3>
+                        <hr class="w-1/2">
+                        <p class="mt-2">Please fill out the booking form and very soon we will contact with you to
+                            schedule
+                            an appointment.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold uppercase text-white">CONTACT US NOW!</h3>
+
+                <form class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Enter Name"
+                        class="p-2 rounded text-white bg-transparent border border-white">
+                    <input type="text" placeholder="Enter Phone Number"
+                        class="p-2 rounded text-white bg-transparent border border-white">
+                    <input type="email" placeholder="Enter Email"
+                        class="p-2 rounded text-white bg-transparent border border-white">
+                    <select class="p-2 rounded text-black bg-white border border-white">
+                        <option>Available Services</option>
+                    </select>
+
+                   
+
+                </form>
+                <div class="flex justify-between mt-6">
+
+                    <div class="col-span-2">
+                        <label for="captcha" class="block text-white">Please confirm you're human:</label>
+                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                    </div>
+
+                    <div class="col-span-2">
+                        <button
+                            class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6  ">
+                            <span
+                                class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-white flex items-center">SUBMIT</span>
+                            <div class="relative separator"></div>
+                            <i class="relative fa-solid fa-plus"></i>
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-12 ">
+        <h2 class="text-4xl text-center headings uppercase">Why Choose Us</h2>
+
+        <div class="bg-image-why-choose-us flex justify-start">
+
+            <div class="bg-gradient w-1/2 flex justify-center items-center">
+
+                <div class="flex flex-col justify-center w-2/3">
+                    <h3 class="text-3xl font-bold leading-10 text-[#265A8D] mb-5 uppercase">for Your Printer/ Copier
+                        Repair &
+                        Service
+                        Lease?</h3>
+                    <p class="text-gray-600b mb-5 text-xl leading-10 font-light text-justify">We provide expert
+                        copier
+                        repair and flexible leasing solutions to keep your business running smoothly. Our certified
+                        technicians ensure fast, reliable service using genuine parts for long-lasting performance.
+                        With
+                        affordable leasing plans, regular maintenance, and dedicated support, we help you minimize
+                        downtime
+                        and maximize efficiency.</p>
+                    <div>
+
+                        <button
+                            class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6  ">
+                            <span
+                                class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            <span class="relative text-white flex items-center"> CONTACT US</span>
+                            <div class="relative separator"></div>
+                            <i class="relative fa-solid fa-plus"></i>
+
+
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Areas We Serve -->
+
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-4xl text-center headings uppercase">Areas We Serve</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53078.07524018768!2d-84.41743664558442!3d33.7508527091724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2sin!4v1739864524760!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="flex justify-center items-center">
+                <div class="">
+                    <h3 class="text-3xl font-bold text-[#265A8D] mb-4">SERVING: METRO ATLANTA & NEARBY REGIONS</h3>
+                    <p class="text-gray-600 text-xl leading-10 font-light text-justify mb-6">
+                        We take pride in delivering top-tier copier and printer solutions across Metro Atlanta and
+                        surrounding areas. Our service network is quick, reliable, and committed to ensuring your
+                        business
+                        runs smoothly with minimal downtime.
+                    </p>
+
+                    <button
+                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6  ">
+                        <span
+                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-white flex items-center"> READ MORE</span>
+                        <div class="relative separator"></div>
+                        <i class="relative fa-solid fa-plus"></i>
+
+
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+
+    <section class="py-12 text-center">
+        <h2 class="text-4xl text-center headings">TESTIMONIALS</h2>
+        <div class="bg-image-testimonials flex justify-end">
+            <div class="bg-gradient w-1/2 flex justify-center items-center">
+                <div class="testimonials-container overflow-hidden relative">
+                    <h3
+                        class="testimonial-title absolute bottom-32 left-16 text-3xl font-bold text-[#265A8D]   uppercase ">
+                        WHAT OUR CUSTOMERS ARE SAYING.....</h3>
+                    <div class="testimonials-content flex transition-all px-20 duration-500 ease-in-out">
+
+                        <div class="flex flex-col justify-center w-2/5  mt-20 testimonial-slide">
+                            <p class="mt-2 text-gray-700 text-2xl font-semibold">Gary Bruce</p>
+                            <p class="text-gray-600b mb-5 text-xl leading-10 font-light text-justify">
+                                SE Laser and Alex’s team are truly exceptional! Their professionalism, expertise, and
+                                dedication to customer satisfaction set them apart in the industry. Over the past 20
+                                years, I have consistently experienced top-notch service.
+                            </p>
+                            <div class="flex justify-center items-center">
+                                <div class="mt-4 flex flex-col items-center">
+                                    <img src="/assets/person1.png" class="w-20 h-20 rounded-full" alt="Customer">
+                                    <div class="flex text-yellow-500">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-col justify-center w-2/3 mt-20 testimonial-slide">
+                            <p class="mt-2 text-gray-700 text-2xl font-semibold">John Doe</p>
+                            <p class="text-gray-600b mb-5 text-xl leading-10 font-light text-justify">
+                                SE Laser offers incredible service and support! I’ve worked with them for years, and
+                                they always exceed my expectations. Their team is responsive, knowledgeable, and
+                                professional, making them my go-to choice for copier and printer services.
+                            </p>
+                            <div class="flex justify-center items-center">
+                                <div class="mt-4 flex flex-col items-center">
+                                    <img src="/assets/person2.png" class="w-20 h-20 rounded-full" alt="Customer">
+                                    <div class="flex text-yellow-500">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-col justify-center w-2/3 mt-20 testimonial-slide">
+                            <p class="mt-2 text-gray-700 text-2xl font-semibold">Jane Smith</p>
+                            <p class="text-gray-600b mb-5 text-xl leading-10 font-light text-center">
+                                SE Laser has provided exceptional service! They are quick to respond and always provide
+                                solutions that help my business run smoothly. Highly recommended for their expertise and
+                                attention to detail.
+                            </p>
+                            <div class="flex justify-center items-center">
+                                <div class="mt-4 flex flex-col items-center">
+                                    <img src="/assets/person3.png" class="w-20 h-20 rounded-full" alt="Customer">
+                                    <div class="flex text-yellow-500">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button
+                        class="prev-btn button-testi absolute top-1/2 left-2 transform -translate-y-1/2  text-[#265A8D] p-3 rounded-full">
+                        <i class="fas fa-arrow-right rotate-180 ml-2"></i>
+                    </button>
+                    <button
+                        class="next-btn absolute button-testi top-1/2 right-2 transform -translate-y-1/2  text-[#265A8D] p-3 rounded-full">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-4xl text-center headings">OUR BRAND PARTNERS</h2>
+        <div class="slider mt-8">
+            <div class="slider-track">
+                <img src="/assets/logo1.png" alt="Ricoh" class="h-10">
+                <img src="/assets/logo2.png" alt="Sharp" class="h-10">
+                <img src="/assets/logo3.png" alt="Konica Minolta" class="h-10">
+                <img src="/assets/logo4.png" alt="Canon" class="h-10">
+                <img src="/assets/logo5.png" alt="Xerox" class="h-10">
+                <img src="/assets/logo6.png" alt="HP" class="h-10">
+
+                <img src="/assets/logo1.png" alt="Ricoh" class="h-10">
+                <img src="/assets/logo2.png" alt="Sharp" class="h-10">
+                <img src="/assets/logo3.png" alt="Konica Minolta" class="h-10">
+                <img src="/assets/logo4.png" alt="Canon" class="h-10">
+                <img src="/assets/logo5.png" alt="Xerox" class="h-10">
+                <img src="/assets/logo6.png" alt="HP" class="h-10">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="mmm mt-10 ">
+        <div class=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-lg">
+
+            <div class="py-14 px-5">
+                <div class="flex items-center space-x-2">
+                    <img src="/assets/logo.png" alt="SE LASER" class="h-16">
+                </div>
+                <p class="mt-4 text-lg text-gray-900 text-justify font-regular">
+                    Offer onsite printer repair
+                    and maintenance services to fix your Printer, so
+                    you can use your machine efficiently and
+                    effectively. We lease well-known, trusted brands
+                    such as Ricoh, Sharp, and Konica to our
+                    customers for 25 years.
+                </p>
+                <p class="mt-4 font-regular text-lg">Call <span class="text-black font-bold text-lg">770-682-1655</span>
+                    or use our
+                    online form for a fast and free quote.</p>
+            </div>
+
+
+            <div class="bg-[#ECECED] py-14">
+                <h3 class="text-2xl font-bold text-center mb-4">QUICK LINKS</h3>
+                <div class="flex justify-center items-center">
+
+
+                    <ul class="mt-4 space-y-2 text-lg font-semibold">
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Buy Copiers & Printers</a></li>
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Copier Repair</a></li>
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Printer Repair</a></li>
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Copier Leasing</a></li>
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Printer Leasing</a></li>
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Office Equipment</a></li>
+                        <li><a href="#" class="flex items-center gap-4 text-gray-700"><i class="fas fa-arrow-right"></i>
+                                Supplies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="bg-[#F3F3F3] py-14">
+                <h3 class="text-2xl font-bold text-center mb-4">CONTACT US</h3>
+
+                <div class="flex justify-center items-center">
+
+                    <div class="font-semibold">
+
+                        <p class="mt-4 flex items-center gap-4">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <span>
+                                <span class="flex flex-col">
+
+
+                                    6500 McDonough Dr,
+                                </span>
+                                <span>
+
+
+                                    #C4 Norcross, GA 30093
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mt-2 flex items-center gap-4 ">
+                            <i class="fas fa-phone"></i> 770-682-1655
+                        </p>
+                        <p class="mt-2 flex items-center gap-4">
+                            <i class="fas fa-envelope"></i> info@selaser.com
+                        </p>
+                        <p class="mt-2 flex items-center gap-4">
+                            <i class="fas fa-clock"></i>
+                            <span>
+                                <span class="flex flex-col">
+
+
+                                    Monday to Friday
+                                </span>
+                                <span>
+
+
+                                    9:00 am - 5:00 pm
+                                </span>
+                            </span>
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bg-[#F8F8F9] py-14 px-6">
+                <h3 class="text-2xl font-bold text-center mb-4 uppercase">gET IN tOUCH</h3>
+                <div class="flex justify-center items-center">
+                    <div class="text-center">
+
+                        <p class="mt-4 flex items-center space-x-2 mb-6 font-semibold">Do you have any queries or
+                            comments about our
+                            website, our
+                            products or any of our services?</p>
+
+
+                        <a class="px-6 py-3 my-10 underline text-lg font-bold mt-10 text-[#265A8D] transition duration-300"
+                            href="#">
+                            CLICK HERE
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="bg-[#265A8D] py-4">
+            <div class="flex justify-between items-center container mx-auto px-4 text-white">
+                <div class="text-gray-100 text-sm font-medium ">Copyrights &copy; <span id="year"></span> All Rights
+                    Reserved By
+                    <span class="text-lg font-bold uppercase ml-2"> Southeast Laser</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-100">
+                        <span class="w-10 h-10 border-2 border-white flex justify-center items-center rounded-lg">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-100">
+                        <span class="w-10 h-10 border-2 border-white flex justify-center items-center rounded-lg">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-100">
+                        <span class="w-10 h-10 border-2 border-white flex justify-center items-center rounded-lg">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
