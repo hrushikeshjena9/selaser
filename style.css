@@ -20,6 +20,11 @@ h1, h2, h3 {
         border: none;
         gap: 20px;
     }
+    .btn1 {
+    
+        border: 2px solid white;
+        gap: 20px;
+    }
 
     .separator {
         width: 2px;
