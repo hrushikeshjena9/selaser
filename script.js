@@ -32,8 +32,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', function () {
     const testimonialsContent = document.querySelector('.testimonials-content');
     const testimonialSlides = document.querySelectorAll('.testimonial-slide');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn1');
+    const nextBtn = document.querySelector('.next-btn1');
     let testimonialWidth = testimonialSlides[0].offsetWidth;
     let index = 0;
     
