@@ -48,60 +48,7 @@
             </div>
         </div>
 
-        <!-- <div class=" flex justify-between items-center container px-4 mx-auto pb-4">
-            <div class="flex items-center">
-                <img src="logo.png" alt="SE Laser Logo" class="h-10">
 
-            </div>
-            <nav class="py-3">
-                <ul class="flex space-x-12 font-light">
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white ">ABOUT</a></li>
-                    <div class="relative inline-block group">
-
-                        <button class="flex items-center text-gray-600 hover:text-gray-800">
-                            OUR SERVICES
-                            <i class="fa-solid fa-chevron-down ml-2"></i>
-                        </button>
-                        <ul
-                            class="absolute left-0 mt-1 z-10 w-48 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ">
-                            <li class="relative drophover">
-                                <a href="#"
-                                    class="block px-4 py-2  uppercase  transition-all duration-300 ease-in-out overflow-hidden">
-                                    Printer Lease
-                                    <span
-                                        class="absolute inset-0 w-0 h-full  transition-all duration-300 ease-in-out"></span>
-                                </a>
-                            </li>
-
-                            <li class="relative drophover">
-                                <a href="#"
-                                    class="block px-4 py-2  uppercase  transition-all duration-300 ease-in-out overflow-hidden">
-                                    Copier Lease
-                                    <span
-                                        class="absolute inset-0 w-0 h-full  transition-all duration-300 ease-in-out"></span>
-                                </a>
-                            </li>
-                            <li class="relative drophover">
-                                <a href="#"
-                                    class="block px-4 py-2  uppercase  transition-all duration-300 ease-in-out overflow-hidden">
-                                    Buy Printer
-                                    <span
-                                        class="absolute inset-0 w-full h-full  transition-all duration-300 ease-in-out"></span>
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a>
-                    </li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a></li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
-                </ul>
-            </nav>
-
-        </div> -->
         <div class="flex justify-between items-center container px-4 mx-auto pb-4">
             <div class="flex items-center">
                 <img src="/assets/logo.png" alt="SE Laser Logo" class="h-16">
@@ -112,30 +59,80 @@
                 <ul class="flex space-x-12 font-light">
                     <li><a href="#" class="hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
                     <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a></li>
-                    <div class="relative inline-block group">
-                        <button class="flex items-center  hover:text-gray-800">
+                    <div class="relative group">
+                        <!-- Menu Trigger -->
+                        <div class=" cursor-pointer">
                             OUR SERVICES
                             <i class="fa-solid fa-chevron-down ml-2"></i>
-                        </button>
-                        <!-- <ul
-                            class="absolute left-0 mt-1 z-10 w-48 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
-                            <li class="relative drophover">
-                                <a href="#"
-                                    class="block px-4 py-2 uppercase transition-all duration-300 ease-in-out overflow-hidden">Printer
-                                    Lease</a>
-                            </li>
-                            <li class="relative drophover">
-                                <a href="#"
-                                    class="block px-4 py-2 uppercase transition-all duration-300 ease-in-out overflow-hidden">Copier
-                                    Lease</a>
-                            </li>
-                            <li class="relative drophover">
-                                <a href="#"
-                                    class="block px-4 py-2 uppercase transition-all duration-300 ease-in-out overflow-hidden">Buy
-                                    Printer</a>
-                            </li>
-                        </ul> -->
+                        </div>
+
+
+                        <!-- Mega Menu -->
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-auto min-w-[750px] pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+                            <div
+                                class="max-w-6xl mx-auto bg-gray-100 opacity-90  relative before:content-[''] before:absolute before:top-0 before:left-[-300%] before:w-[300%] before:h-full before:bg-gray-100 before:opacity-90 after:content-[''] after:absolute after:top-0 after:right-[-30%] after:w-[300%] after:h-full after:bg-gray-100 after:opacity-90">
+
+                                <div class="flex justify-center items-center">
+                                    <div class="px-6 py-4  pb-16 z-50">
+                                        <div class="dropdown relative ">
+                                            <h3 class="font-light text-gray-700 pb-6 flex items-center cursor-pointer">
+                                                Buy Office Equipment
+                                                <span class="ml-2 transition-transform duration-300 -rotate-90">
+                                                    ▼
+                                                </span>
+                                            </h3>
+                                            <ul class="absolute left-full top-0 ml-2 w-64 transition-all duration-300">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 py-3 text-gray-600 hover:text-white  transition-all duration-300">
+                                                        Buy Copiers & Printers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 py-3 text-gray-600 hover:text-white rounded transition-all duration-300">
+                                                        Office Equipment Supplies
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <h3 class="font-light text-gray-700 pb-6">Copier Leasing</h3>
+                                        <h3 class="font-light text-gray-700 pb-6">Printer Leasing</h3>
+
+                                        <div class="dropdown relative">
+                                            <h3 class="font-light text-gray-700 pb-2 flex items-center cursor-pointer">
+                                                Repair Services
+                                                <span class="ml-2 transition-transform duration-300 -rotate-90">
+                                                    ▼
+                                                </span>
+                                            </h3>
+                                            <ul
+                                                class="absolute left-full top-0 ml-2  w-64 opacity-0 invisible transition-all duration-300">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 py-3 text-gray-600 hover:text-white rounded transition-all duration-300">
+                                                        Copiers Repair
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 py-3 text-gray-600 hover:text-white rounded transition-all duration-300">
+                                                        Printer Repair
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+
+
                     <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a>
                     </li>
                     <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a></li>
@@ -151,16 +148,33 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="md:hidden hidden absolute top-0 left-0 w-full bg-white shadow-lg z-10">
-                <ul class="space-y-4 py-4 px-6">
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a></li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a>
+            <div id="mobileMenu"
+                class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform -translate-y-full transition-transform duration-300 ease-in-out">
+                <button id="closeMenu" class="absolute top-4 right-4 text-gray-600">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+
+                <ul class="space-y-4 py-6 px-6 text-center">
+                    <li><a href="#" class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a>
                     </li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a></li>
-                    <li><a href="#" class="text-gray-600 hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
+                    <li><a href="#" class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a></li>
+                    <li><a href="#" class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
                 </ul>
             </div>
+
+            <!-- Overlay to close menu -->
+            <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
         </div>
 
 
@@ -173,7 +187,7 @@
         <div class="bg-image-slider flex items-center justify-center lg:justify-start">
             <!-- Main content -->
             <div class="w-full md:w-1/2 bg-gradient flex  justify-center items-center ">
-                <div class="container px-4 w-full md:w-[37rem]">
+                <div class="container py-24 px-4 w-full md:w-[37rem]">
                     <h1 class="text-3xl md:text-4xl font-bold py-4 leading-10 text-center md:text-left">
                         REPAIR & MAINTENANCE SERVICES
                     </h1>
@@ -257,17 +271,19 @@
     <section class="py-12">
         <h2 class="text-4xl text-center headings uppercase">OUR SERVICES</h2>
         <div class="bg-image-service flex justify-end">
+
+
             <div class="w-full md:w-1/2 flex justify-center items-center">
                 <div class="space-y-6 ">
                     <div class="sm:px-12 py-12">
-                        <!-- Service 1 -->
                         <div class="flex flex-col md:flex-row gap-4">
                             <img src="/assets/service-img-1.png" alt="Printer"
                                 class="w-full sm:w-[261px] h-auto sm:h-[186px]">
                             <div>
                                 <h3 class="font-semibold text-lg">BUY COPIER AND LASER PRINTER</h3>
                                 <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
-                                    Buy Laser Printers & Copiers from SouthEast Laser, Atlanta’s Authorized Dealer.
+                                    Buy Laser Printers & Copiers from SouthEast Laser, Atlanta’s Authorized
+                                    Dealer.
                                     Choose from top brands like HP, Canon, and more.
                                 </p>
                                 <hr>
@@ -284,14 +300,15 @@
                             </div>
                         </div>
 
-                        <!-- Service 2 -->
                         <div class="flex flex-col md:flex-row gap-4 py-12">
                             <img src="/assets/service-img-2.png" alt="Printer"
                                 class="w-full sm:w-[261px] h-auto sm:h-[186px]">
                             <div>
                                 <h3 class="font-semibold text-lg">PRINTER REPAIR & MAINTENANCE</h3>
                                 <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
-                                    South East Laser has provided expert printer and copier repair for 25 years in Metro
+                                    South East Laser has provided expert printer and copier repair for 25 years
+                                    in
+                                    Metro
                                     Atlanta. We offer quick response....
                                 </p>
                                 <hr>
@@ -308,14 +325,14 @@
                             </div>
                         </div>
 
-                        <!-- Service 3 -->
                         <div class="flex flex-col md:flex-row gap-4">
                             <img src="/assets/service-img-3.png" alt="Printer"
                                 class="w-full sm:w-[261px] h-auto sm:h-[186px]">
                             <div>
                                 <h3 class="font-semibold text-lg">OFFICE EQUIPMENT SUPPLIER</h3>
                                 <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
-                                    Shop for office equipment supplies such as Paper, Printer Ink, and Toners. SouthEast
+                                    Shop for office equipment supplies such as Paper, Printer Ink, and Toners.
+                                    SouthEast
                                     Laser supplies trusted brands at everyday low prices.
                                 </p>
                                 <hr>
@@ -331,10 +348,21 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Navigation Buttons -->
+                        <div class="flex justify-between mt-6">
+                            <a id="prev-btn"
+                                class="bg-[#265A8D] text-white hover:bg-[#808080] cursor-pointer rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-arrow-right rotate-180 text-xl"></i>
+                            </a>
+                            <a id="next-btn"
+                                class="bg-[#265A8D] text-white cursor-pointer hover:bg-[#808080] rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-arrow-right  text-xl"></i>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
@@ -403,7 +431,7 @@
 
         <div class="bg-image-why-choose-us flex justify-start flex-col md:flex-row">
 
-            <div class="bg-gradient w-full md:w-1/2 flex justify-center items-center p-4">
+            <div class="bg-gradient w-full md:w-1/2 flex justify-center items-center py-32">
 
                 <div class="flex flex-col justify-center w-full md:w-2/3 text-center md:text-left">
                     <h3 class="text-3xl font-bold leading-10 text-[#265A8D] mb-5 uppercase">For Your Printer/Copier
@@ -476,8 +504,7 @@
         <div class="bg-image-testimonials flex justify-end">
             <div class="bg-gradient w-1/2 flex justify-center items-center">
                 <div class="testimonials-container py-20 overflow-hidden relative">
-                    <h3
-                        class="mt-6 text-3xl font-bold text-[#265A8D]   uppercase ">
+                    <h3 class="mt-6 text-3xl font-bold text-[#265A8D]   uppercase ">
                         WHAT OUR CUSTOMERS ARE SAYING.....</h3>
                     <div class="testimonials-content flex transition-all px-20 duration-500 ease-in-out">
 
@@ -536,13 +563,15 @@
                         </div>
                     </div>
 
+
+
                     <button
                         class="prev-btn button-testi absolute top-1/2 left-2 transform -translate-y-1/2  text-[#265A8D] p-3 rounded-full">
-                        <i class="fas fa-arrow-right rotate-180 ml-2"></i>
+                        <i class="fas fa-arrow-right rotate-180"></i>
                     </button>
                     <button
                         class="next-btn absolute button-testi top-1/2 right-2 transform -translate-y-1/2  text-[#265A8D] p-3 rounded-full">
-                        <i class="fas fa-arrow-right ml-2"></i>
+                        <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
@@ -591,9 +620,7 @@
                     such as Ricoh, Sharp, and Konica to our
                     customers for 25 years.
                 </p>
-                <p class="mt-4 font-regular text-lg">Call <span class="text-black font-bold text-lg">770-682-1655</span>
-                    or use our
-                    online form for a fast and free quote.</p>
+
             </div>
 
 
@@ -656,12 +683,9 @@
                             <i class="fas fa-clock"></i>
                             <span>
                                 <span class="flex flex-col">
-
-
                                     Monday to Friday
                                 </span>
                                 <span>
-
 
                                     9:00 am - 5:00 pm
                                 </span>
@@ -683,20 +707,23 @@
                             comments about our
                             website, our
                             products or any of our services?</p>
+                        <p class="mt-2 font-regular text-lg">Call <span
+                                class="text-black font-bold text-lg">770-682-1655</span>
+                            or use our
+                            online form for a fast and free quote.</p>
 
+                        <div class="mt-4 ">
 
-                        <a class="px-6 py-3 my-10 underline text-lg font-bold mt-10 text-[#265A8D] transition duration-300"
-                            href="#">
-                            CLICK HERE
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                            <a class=" hover:underline text-lg font-bold mt-10 text-[#265A8D] transition duration-300"
+                                href="#">
+                                CLICK HERE
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
 
                     </div>
 
                 </div>
-
-
-
             </div>
         </div>
 

@@ -14,8 +14,12 @@ function changeBackground() {
     index = (index + 1) % images.length;
 }
 
-changeBackground(); // Set initial image
-setInterval(changeBackground, 4000); // Change image every 4 seconds
+changeBackground(); 
+setInterval(changeBackground, 4000);
+
+
+
+
 
 
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -72,7 +76,77 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+const overlay = document.getElementById('overlay');
 
-hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+
+function openMenu() {
+    mobileMenu.classList.remove('-translate-y-full');
+    overlay.classList.remove('hidden');
+}
+
+
+function closeMenuHandler() {
+    mobileMenu.classList.add('-translate-y-full');
+    overlay.classList.add('hidden');
+}
+
+
+hamburger.addEventListener('click', openMenu);
+closeMenu.addEventListener('click', closeMenuHandler);
+overlay.addEventListener('click', closeMenuHandler);
+
+document.querySelectorAll('#mobileMenu a').forEach(item => {
+    item.addEventListener('click', closeMenuHandler);
 });
+
+
+
+const container = document.getElementById('service-container');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    let index1 = 0;
+    
+    function updateSlider() {
+        container.style.transform = `translateX(-${index1 * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (index1 > 0) {
+            index1--;
+            updateSlider();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (index1 < container.children.length - 1) {
+            index1++;
+            updateSlider();
+        }
+    });
+
+
+// const container = document.getElementById('service-container');
+// const prevBtn = document.getElementById('prev-btn');
+// const nextBtn = document.getElementById('next-btn');
+
+// let index1 = 0;
+// const totalSlides = 2; // Since you have 2 full slides
+
+// function updateSlider() {
+//     container.style.transform = `translateX(-${index1 * 100}%)`;
+// }
+
+// prevBtn.addEventListener('click', () => {
+//     if (index1 > 0) {
+//         index1--;
+//         updateSlider();
+//     }
+// });
+
+// nextBtn.addEventListener('click', () => {
+//     if (index1 < totalSlides - 1) {
+//         index1++;
+//         updateSlider();
+//     }
+// });
