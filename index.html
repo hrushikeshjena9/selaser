@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 </head>
@@ -25,11 +26,11 @@
         <div class="container px-4 mx-auto py-4">
             <div class="flex flex-wrap justify-between items-center">
 
-                <!-- Text Content -->
+
                 <p class="font-light uppercase w-full sm:w-auto mb-4 sm:mb-0 hidden sm:block">Reliable Printer Solutions
                     in Metro Atlanta.</p>
 
-                <!-- Contact Info Section -->
+
                 <div class="flex flex-wrap justify-between sm:space-x-6  px-4 font-light w-full sm:w-auto">
                     <div class="flex items-center space-x-2 mb-4 sm:mb-0">
                         <i class="fa-solid fa-phone text-black-500"></i>
@@ -54,20 +55,18 @@
                 <img src="/assets/logo.png" alt="SE Laser Logo" class="h-16">
             </div>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden md:block py-3">
-                <ul class="flex space-x-12 font-light">
+
+            <nav class="hidden lg:block py-3">
+                <ul class="flex space-x-6 xl:space-x-12 font-light">
                     <li><a href="#" class="hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a></li>
                     <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a></li>
-                    <div class="relative group">
-                        <!-- Menu Trigger -->
+                    <!-- <div class="relative group">
+
                         <div class=" cursor-pointer">
                             OUR SERVICES
                             <i class="fa-solid fa-chevron-down ml-2"></i>
                         </div>
 
-
-                        <!-- Mega Menu -->
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 w-auto min-w-[750px] pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
                             <div
@@ -131,7 +130,9 @@
                             </div>
                         </div>
 
-                    </div>
+
+
+                    </div> -->
 
 
 
@@ -142,16 +143,15 @@
                 </ul>
             </nav>
 
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex items-center">
+
+            <div class="lg:hidden flex items-center">
                 <button id="hamburger" class="text-gray-600 focus:outline-none">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
             <div id="mobileMenu"
-                class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform -translate-y-full transition-transform duration-300 ease-in-out">
+                class="lg:hidden fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform -translate-y-full transition-transform duration-300 ease-in-out">
                 <button id="closeMenu" class="absolute top-4 right-4 text-gray-600">
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -175,26 +175,27 @@
                 </ul>
             </div>
 
-            <!-- Overlay to close menu -->
-            <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50"></div>
+
+            <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
         </div>
 
 
 
     </header>
-
-    <!-- Hero Section -->
-
     <section>
-        <div class="bg-image-slider flex items-center justify-center lg:justify-start">
-            <!-- Main content -->
-            <div class="w-full md:w-1/2 bg-gradient flex  justify-center items-center ">
-                <div class="container py-24 px-4 w-full md:w-[37rem]">
-                    <h1 class="text-3xl md:text-4xl font-bold py-4 leading-10 text-center md:text-left">
+        <div class="relative w-full flex items-center md:justify-start lg:justify-start overflow-hidden">
+
+            <div class="absolute inset-0 bg-image-slider transition-opacity duration-1000"></div>
+
+
+            <div class="relative z-10 w-full md:w-1/2  bg-gradient flex justify-center items-center">
+                <div class="container py-24 px-4 w-full md:w-[37rem] text-center md:text-left">
+                    <h1 id="slider-title"
+                        class="text-3xl md:text-4xl font-bold py-4 leading-10 transition-opacity duration-1000">
                         REPAIR & MAINTENANCE SERVICES
                     </h1>
-                    <p
-                        class="mt-4 text-gray-600 font-light text-lg md:text-xl leading-10 py-4 text-center md:text-left">
+                    <p id="slider-text"
+                        class="mt-4 text-gray-600 font-light text-lg md:text-xl leading-10 py-4 transition-opacity duration-1000">
                         We sell a huge range of colour and mono laser and multi-function printers, scanners, wide format
                         plotters, plus consumables, spare parts, and accessories.
                     </p>
@@ -221,6 +222,7 @@
             </div>
         </div>
     </section>
+
 
 
     <!-- Who We Are Section -->
@@ -271,11 +273,14 @@
 
     <section class="py-12">
         <h2 class="text-4xl text-center headings uppercase">OUR SERVICES</h2>
-        <div class="bg-image-service flex justify-end">
-            <div class="w-full md:w-1/2 flex justify-center items-center">
-                <div class="space-y-6 ">
-                    <div class="sm:px-12 py-12">
-                        <div class="flex flex-col md:flex-row gap-4">
+        <div class="bg-image-service  flex justify-end">
+
+
+            <div class="w-full lg:w-1/2 bg-gradient  flex justify-center items-center overflow-hidden relative">
+                <div class="flex w-full transition-transform  duration-500 ease-in-out" id="slider">
+                    <!-- Slide 1 -->
+                    <div class="w-full flex-shrink-0 flex flex-col px-4 sm:px-5 lg:px-8 xl:px-8 2xl:px-32 space-y-6 py-12">
+                        <div class="flex flex-col md:flex-row gap-4 ">
                             <img src="/assets/service-img-1.png" alt="Printer"
                                 class="w-full sm:w-[261px] h-auto sm:h-[186px]">
                             <div>
@@ -299,7 +304,7 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-col md:flex-row gap-4 py-12">
+                        <div class="flex flex-col md:flex-row gap-4 py-6">
                             <img src="/assets/service-img-2.png" alt="Printer"
                                 class="w-full sm:w-[261px] h-auto sm:h-[186px]">
                             <div>
@@ -347,25 +352,100 @@
                                 </div>
                             </div>
                         </div>
-                   
-                        <div class="flex justify-between mt-6">
-                            <a id="prev-btn"
-                                class="bg-[#265A8D] text-white hover:bg-[#808080] cursor-pointer rounded-full w-12 h-12 flex items-center justify-center">
-                                <i class="fas fa-arrow-right rotate-180 text-xl"></i>
-                            </a>
-                            <a id="next-btn"
-                                class="bg-[#265A8D] text-white cursor-pointer hover:bg-[#808080] rounded-full w-12 h-12 flex items-center justify-center">
-                                <i class="fas fa-arrow-right  text-xl"></i>
-                            </a>
+                    </div>
 
+                    <!-- Slide 2 -->
+                    <div class="w-full flex-shrink-0 flex flex-col space-y-6 py-12">
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <img src="/assets/service-img-1.png" alt="Printer"
+                                class="w-full sm:w-[261px] h-auto sm:h-[186px]">
+                            <div>
+                                <h3 class="font-semibold text-lg uppercase">Plotter Sales, Service & Repairing</h3>
+                                <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
+                                    South East Laser has provided expert printer and copier repair for 25 years in Metro
+                                    Atlanta. We offer quick response, proactive supplies, and onsite service for Canon,
+                                    HP, Ricoh, and Xerox printers.
+                                </p>
+                                <hr>
+                                <div class="flex justify-end items-end">
+                                    <button
+                                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                                        <span
+                                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                                        <span class="relative text-white flex items-center">READ MORE</span>
+                                        <div class="relative separator"></div>
+                                        <i class="relative fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-4 ">
+                            <img src="/assets/service-img-2.png" alt="Printer"
+                                class="w-full sm:w-[261px] h-auto sm:h-[186px]">
+                            <div>
+                                <h3 class="font-semibold text-lg uppercase">Office COPIER /PRINTER
+                                    LEASE / RENTAL</h3>
+                                <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
+                                    We lease well-known, trusted brands such as Ricoh, Sharp, and Konica to our
+                                    customers for 25 years. We offer a wide array of business machines to our customers
+                                    including....
+                                </p>
+                                <hr>
+                                <div class="flex justify-end items-end">
+                                    <button
+                                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                                        <span
+                                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                                        <span class="relative text-white flex items-center">READ MORE</span>
+                                        <div class="relative separator"></div>
+                                        <i class="relative fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-4 py-12">
+                            <img src="/assets/service-img-3.png" alt="Printer"
+                                class="w-full sm:w-[261px] h-auto sm:h-[186px]">
+                            <div>
+                                <h3 class="font-semibold text-lg">COPIER REPAIR SERVICES</h3>
+                                <p class="text-gray-600 my-4 text-base leading-6 font-light text-justify">
+                                    We specialize in copier repair near Metro Atlanta, GA. Our certified technicians
+                                    service, repair, and maintain Epson, Xerox, and Canon copiers onsite. Book a
+                                    technician visit at your home or office
+                                </p>
+                                <hr>
+                                <div class="flex justify-end items-end">
+                                    <button
+                                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6">
+                                        <span
+                                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                                        <span class="relative text-white flex items-center">READ MORE</span>
+                                        <div class="relative separator"></div>
+                                        <i class="relative fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="flex justify-between mt-6 w-full absolute bottom-0 px-4 sm:px-5 lg:px-8 xl:px-8 2xl:px-32">
+                    <a id="prev-btn"
+                        class="bg-[#265A8D] text-white cursor-pointer rounded-full w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-arrow-left text-xl"></i>
+                    </a>
+                    <a id="next-btn"
+                        class="bg-[#265A8D] text-white cursor-pointer rounded-full w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-arrow-right text-xl"></i>
+                    </a>
                 </div>
             </div>
 
 
-            
-            
+
+
     </section>
 
 
@@ -373,7 +453,7 @@
     <!-- contact form  -->
 
     <section class="container  mx-auto px-4 py-12 mt-44">
-        <div class="bg-[#265A8D] text-white py-12  rounded-lg grid grid-cols-1 lg:grid-cols-2 gap-12 px-12 relative">
+        <div class="bg-[#265A8D] text-white py-12  rounded-lg grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 sm:px-6 lg:px-8 xl:px-12 relative">
             <div class="relative">
                 <img src="/assets/pinter-contact.png" alt="Printer Support"
                     class="absolute w-[528px] h-[301px] -top-56 left-1/3 transform -translate-x-1/2">
@@ -404,10 +484,9 @@
 
 
                 </form>
-                <div class="flex justify-between mt-6">
+                <div class="flex flex-wrap gap-6 xl:flex-nowrap justify-between mt-6">
 
                     <div class="col-span-2">
-                        <label for="captcha" class="block text-white">Please confirm you're human:</label>
                         <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
                     </div>
 
@@ -667,7 +746,7 @@
 
 
 
-                
+
                     <ul class="mt-4 space-y-2 text-base font-medium">
                         <li>
                             <a href="#"
@@ -722,36 +801,40 @@
 
                 <div class="flex justify-center items-center">
                     <div class="font-medium text-base">
-                      <p class="mt-4 flex items-center gap-4 cursor-pointer transition duration-300 ease-in-out hover:text-[#265A8D]">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>
-                          <span class="flex flex-col">
-                            6500 McDonough Dr,
-                          </span>
-                          <span>
-                            #C4 Norcross, GA 30093
-                          </span>
-                        </span>
-                      </p>
-                      <p class="mt-2 flex items-center mt-4 cursor-pointer gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
-                        <i class="fas fa-phone"></i> 770-682-1655
-                      </p>
-                      <p class="mt-2 flex items-center mt-4 cursor-pointer gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
-                        <i class="fas fa-envelope"></i> info@selaser.com
-                      </p>
-                      <p class="mt-2 flex items-center cursor-pointer mt-4 gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
-                        <i class="fas fa-clock"></i>
-                        <span>
-                          <span class="flex flex-col">
-                            Monday to Friday
-                          </span>
-                          <span>
-                            9:00 am - 5:00 pm
-                          </span>
-                        </span>
-                      </p>
+                        <p
+                            class="mt-4 flex items-center gap-4 cursor-pointer transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                <span class="flex flex-col">
+                                    6500 McDonough Dr,
+                                </span>
+                                <span>
+                                    #C4 Norcross, GA 30093
+                                </span>
+                            </span>
+                        </p>
+                        <p
+                            class="mt-2 flex items-center mt-4 cursor-pointer gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-phone"></i> 770-682-1655
+                        </p>
+                        <p
+                            class="mt-2 flex items-center mt-4 cursor-pointer gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-envelope"></i> info@selaser.com
+                        </p>
+                        <p
+                            class="mt-2 flex items-center cursor-pointer mt-4 gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-clock"></i>
+                            <span>
+                                <span class="flex flex-col">
+                                    Monday to Friday
+                                </span>
+                                <span>
+                                    9:00 am - 5:00 pm
+                                </span>
+                            </span>
+                        </p>
                     </div>
-                  </div>
+                </div>
 
             </div>
 

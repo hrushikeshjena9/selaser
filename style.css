@@ -34,19 +34,43 @@ h1, h2, h3 {
     }
 
 .bg-gradient {
-    height: 100%;
     background: linear-gradient(0deg, rgba(241, 243, 242, 0.86) 0%, rgba(255, 255, 255, 0.86) 100%);
 }
 .mmm{
     background-image: linear-gradient(90deg,#EBEBEB 0%, #F8FAF9 100%);
 }
 
-.bg-image-slider {
+/* .bg-image-slider {
     width: 100%;
     background-size: cover;
     background-position: center;
     transition: background-image 1.5s ease-in-out;
+} */
+
+.bg-image-slider {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
+.fade-out {
+    opacity: 0.1;
+}
+
+.text-fade {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.text-fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 .bg-image-service {
     width: 100%;
@@ -236,3 +260,32 @@ h3 span {
     transition: transform 0.3s ease;
     transform: rotate(-90deg);
 }
+
+
+
+@media (max-width: 480px) {
+    
+  }
+  
+  @media (max-width: 639px) {
+    
+  }
+  
+  @media (min-width: 640px) and (max-width: 767px) {
+ 
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+ 
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+
+  }
+  
+  @media (min-width: 1280px) and (max-width: 1535px) {
+  }
+  @media (min-width: 1536) {
+   
+  
+  }
+  
