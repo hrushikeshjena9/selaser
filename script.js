@@ -1,62 +1,71 @@
-const slider = document.querySelector(".bg-image-slider");
-const title = document.getElementById("slider-title");
-const text = document.getElementById("slider-text");
-const slides = [
-    {
-        image: "./assets/slider-img-1.png",
-        title: "REPAIR & MAINTENANCE SERVICES",
-        text: "We sell a huge range of colour and mono laser and multi-function printers, scanners, wide format plotters, plus consumables, spare parts, and accessories."
-    },
-    {
-        image: "./assets/slider-img-2.jpg",
-        title: " PLOTTER SALES, SERVICE & REPAIRING",
-        text: "Discover the best quality printers and scanners for your home and office needs. Get affordable prices and fast delivery.  spare parts, and accessories."
-    },
-    {
-        image: "./assets/slider-img-3.jpg",
-        title: "OFFICE COPIER /PRINTERLEASE / RENTAL",
-        text: "We provide genuine spare parts and consumables for a variety of printer models, ensuring smooth and long-lasting performance.  spare parts, and accessories."
-    },
-    {
-        image: "./assets/slider-img-4.jpg",
-        title: "OFFICE EQUIPMENTS SUPPLIER IN Atlanta",
-        text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions.  spare parts, and accessories."
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".bg-image-slider");
+    const title = document.getElementById("slider-title");
+    const text = document.getElementById("slider-text");
+
+    if (!slider || !title || !text) {
+        console.error("One or more elements not found! Check your HTML structure.");
+        return;
     }
-];
 
-let index = 0;
+    const slides = [
+        {
+            image: "./assets/slider-img-1.png",
+            title: "REPAIR & MAINTENANCE SERVICES",
+            text: "We sell a huge range of colour and mono laser and multi-function printers, scanners, wide format plotters, plus consumables, spare parts, and accessories."
+        },
+        {
+            image: "./assets/slider-img-2.jpg",
+            title: "PLOTTER SALES, SERVICE & REPAIRING",
+            text: "Discover the best quality printers and scanners for your home and office needs. Get affordable prices and fast delivery. Spare parts, and accessories."
+        },
+        {
+            image: "./assets/slider-img-3.jpg",
+            title: "OFFICE COPIER / PRINTER LEASE / RENTAL",
+            text: "We provide genuine spare parts and consumables for a variety of printer models, ensuring smooth and long-lasting performance."
+        },
+        {
+            image: "./assets/slider-img-4.jpg",
+            title: "OFFICE EQUIPMENTS SUPPLIER IN Atlanta",
+            text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions."
+        }
+    ];
 
-function changeSlide() {
+    let index = 0;
 
-    slider.classList.add("fade-out");
-    title.classList.remove("text-fade-in");
-    text.classList.remove("text-fade-in");
-    title.classList.add("text-fade");
-    text.classList.add("text-fade");
+    function changeSlide() {
+        // Add fade-out effect
+        slider.classList.add("fade-out");
+        title.classList.remove("text-fade-in");
+        text.classList.remove("text-fade-in");
+        title.classList.add("text-fade");
+        text.classList.add("text-fade");
 
-    setTimeout(() => {
-  
-        slider.style.backgroundImage = `url('${slides[index].image}')`;
-        title.textContent = slides[index].title;
-        text.textContent = slides[index].text;
+        setTimeout(() => {
+            // Update slide content
+            slider.style.backgroundImage = `url('${slides[index].image}')`;
+            title.textContent = slides[index].title;
+            text.textContent = slides[index].text;
 
-    
-        slider.classList.remove("fade-out");
-        title.classList.remove("text-fade");
-        text.classList.remove("text-fade");
-        title.classList.add("text-fade-in");
-        text.classList.add("text-fade-in");
+            // Remove fade-out and add fade-in effect
+            slider.classList.remove("fade-out");
+            title.classList.remove("text-fade");
+            text.classList.remove("text-fade");
+            title.classList.add("text-fade-in");
+            text.classList.add("text-fade-in");
 
+            index = (index + 1) % slides.length;
+        }, 2000);
+    }
 
-        index = (index + 1) % slides.length;
-    }, 2000);
-}
-
-changeSlide();
-setInterval(changeSlide, 5000);
-
-
-
+    // Start the slider
+    changeSlide();
+    setInterval(changeSlide, 5000);
+});
 
 
 
