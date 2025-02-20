@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "./assets/slider-img-3.jpg",
             title: "OFFICE COPIER / PRINTER LEASE / RENTAL",
-            text: "We provide genuine spare parts and consumables for a variety of printer models, ensuring smooth and long-lasting performance."
+            text: "We provide genuine spare parts and consumables for a variety of printer models, ensuring smooth and long-lasting performance. Printer Lease And Rental"
         },
         {
             image: "./assets/slider-img-4.jpg",
             title: "OFFICE EQUIPMENTS SUPPLIER IN Atlanta",
-            text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions."
+            text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions. Equipments Supplier in  Atlanta"
         }
     ];
 
