@@ -1,6 +1,3 @@
-
-
-
 const slider = document.querySelector(".bg-image-slider");
 const title = document.getElementById("slider-title");
 const text = document.getElementById("slider-text");
@@ -30,7 +27,7 @@ const slides = [
 let index = 0;
 
 function changeSlide() {
-    // Add fade-out effect for background and text
+
     slider.classList.add("fade-out");
     title.classList.remove("text-fade-in");
     text.classList.remove("text-fade-in");
@@ -38,12 +35,12 @@ function changeSlide() {
     text.classList.add("text-fade");
 
     setTimeout(() => {
-        // Change background and content
+  
         slider.style.backgroundImage = `url('${slides[index].image}')`;
         title.textContent = slides[index].title;
         text.textContent = slides[index].text;
 
-        // Remove fade-out and fade-in new content
+    
         slider.classList.remove("fade-out");
         title.classList.remove("text-fade");
         text.classList.remove("text-fade");
