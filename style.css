@@ -254,8 +254,8 @@ h3 span {
     background: none;
   }
   .bg-image-testimonials {
- background:none;
-  }
+    background:none;
+     }
   .bg-image-why-choose-us {
     background: none;
           }
@@ -266,6 +266,9 @@ h3 span {
   .bg-image-service {
     background: none;
   }
+  .bg-image-testimonials {
+    background:none;
+     }
   .bg-image-why-choose-us {
     background: none;
           }
@@ -275,6 +278,9 @@ h3 span {
   .bg-image-service {
     background: none;
   }
+  .bg-image-testimonials {
+    background:none;
+     }
   .bg-image-why-choose-us {
     background: none;
           }
@@ -298,3 +304,10 @@ background: none;
 }
 @media (min-width: 1536) {
 }
+
+.hoverdrop:hover{
+
+
+border-bottom: 2px solid #265a8d;
+}
+
