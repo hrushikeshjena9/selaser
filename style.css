@@ -22,10 +22,7 @@ h3 {
   border: none;
   gap: 20px;
 }
-.btn1 {
-  border: 2px solid white;
-  gap: 20px;
-}
+
 
 .separator {
   width: 2px;
@@ -45,20 +42,15 @@ h3 {
   background-image: linear-gradient(90deg, #ebebeb 0%, #f8faf9 100%);
 }
 
-/* .bg-image-slider {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1.5s ease-in-out;
-} */
 
-.bg-image-slider {
+
+/* .bg-image-slider {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
   opacity: 1;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 3s ease-in-out, transform 3s ease-in-out;
 }
 
 .fade-out {
@@ -68,13 +60,52 @@ h3 {
 .text-fade {
   opacity: 0;
   transform: translateX(10px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 3s ease-in-out, transform 3s ease-in-out;
 }
 
 .text-fade-in {
   opacity: 1;
   transform: translateX(0);
+} */
+
+
+.bg-image-slider {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  will-change: opacity, transform;
 }
+
+.fade-out {
+  opacity: 0;
+  transform: scale(1.1); 
+}
+
+.text-fade {
+  opacity: 0;
+  transform: translateX(0); 
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.text-fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  animation: smooth-fade-in 2s ease-in-out;
+}
+
+@keyframes smooth-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 .bg-image-service {
   width: 100%;
@@ -229,10 +260,6 @@ h3 {
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 4px;
 }
-.dropdown ul li a:hover {
-  background-color: #3b82f6;
-  color: white;
-}
 
 .dropdown:hover ul {
   opacity: 1;
@@ -311,3 +338,11 @@ background: none;
 border-bottom: 2px solid #265a8d;
 }
 
+.bg-our-services{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/assets/ourservice-bg.png");
+
+}

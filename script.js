@@ -1,9 +1,9 @@
 
 
+
 const slider = document.querySelector(".bg-image-slider");
 const title = document.getElementById("slider-title");
 const text = document.getElementById("slider-text");
-
 const slides = [
     {
         image: "./assets/slider-img-1.png",
@@ -22,7 +22,7 @@ const slides = [
     },
     {
         image: "./assets/slider-img-4.jpg",
-        title: "OFFICE EQUIPMENTS SUPPLIER",
+        title: "OFFICE EQUIPMENTS SUPPLIER IN Atlanta",
         text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions.  spare parts, and accessories."
     }
 ];
@@ -50,14 +50,17 @@ function changeSlide() {
         title.classList.add("text-fade-in");
         text.classList.add("text-fade-in");
 
-        // Update index for next slide
+
         index = (index + 1) % slides.length;
-    }, 1000); // Match the CSS transition duration
+    }, 2000);
 }
 
-// Initial Slide Load
 changeSlide();
-setInterval(changeSlide, 4000);
+setInterval(changeSlide, 5000);
+
+
+
+
 
 
 
@@ -156,6 +159,7 @@ prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + 2) % 2;
     slider1.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
+
 
 
 
