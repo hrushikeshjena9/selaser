@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = [
         {
             image: "./assets/slider-img-1.png",
-            title: "REPAIR & MAINTENANCE SERVICES",
+            title: "Printer REPAIR & MAINTENANCE SERVICES",
             text: "We sell a huge range of colour and mono laser and multi-function printers, scanners, wide format plotters, plus consumables, spare parts, and accessories."
         },
         {
