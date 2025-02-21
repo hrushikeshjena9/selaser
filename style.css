@@ -65,13 +65,13 @@ h3 {
 .text-fade {
   opacity: 0;
   transform: translateX(0); 
-  transition: opacity 5s ease-in-out, transform 2s ease-in-out;
+  transition: opacity 10s ease-in-out, transform 6s ease-in-out;
 }
 
 .text-fade-in {
   opacity: 1;
   transform: translateX(0);
-  animation: smooth-fade-in 3s ease-in-out;
+  animation: smooth-fade-in 6s ease-in-out;
 }
 
 @keyframes smooth-fade-in {

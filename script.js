@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Start the slider
     changeSlide();
-    setInterval(changeSlide, 10000);
+    setInterval(changeSlide, 14000);
 });
 
 
@@ -169,3 +169,18 @@ prevBtn.addEventListener("click", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const topButton = document.getElementById("topButton");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            topButton.classList.remove("hidden");
+        } else {
+            topButton.classList.add("hidden");
+        }
+    });
+
+    topButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});

@@ -291,13 +291,15 @@
                     class="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center sm:justify-between">
                     <!-- Read More Button -->
                     <button
-                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group  shadow-lg flex items-center justify-center text-sm sm:text-lg px-6  sm:w-60 w-full">
-                        <span
-                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
-                        <span class="relative text-white flex items-center">READ MORE</span>
-                        <div class="relative separator"></div>
-                        <i class="relative fa-solid fa-plus"></i>
-                    </button>
+                    class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group  shadow-lg flex items-center justify-center text-lg px-6  ">
+                    <span
+                        class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                    <span class="relative text-white flex items-center"> READ MORE</span>
+                    <div class="relative separator"></div>
+                    <i class="relative fa-solid fa-plus"></i>
+
+
+                </button>
                     <button
                     class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group  shadow-lg flex items-center justify-center  text-sm sm:text-lg px-6 ">
                     <span
@@ -637,16 +639,19 @@
                         runs smoothly with minimal downtime.
                     </p>
 
+                <div class="  flex justify-end items-end">
                     <button
-                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group bg-[#808080] shadow-lg flex items-center justify-center text-lg px-6  ">
-                        <span
-                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
-                        <span class="relative text-white flex items-center"> READ MORE</span>
-                        <div class="relative separator"></div>
-                        <i class="relative fa-solid fa-plus"></i>
+                    class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group shadow-lg flex items-center justify-center text-lg px-6  ">
+                    <span
+                        class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                    <span class="relative text-white flex items-center"> READ MORE</span>
+                    <div class="relative separator"></div>
+                    <i class="relative fa-solid fa-plus"></i>
 
 
-                    </button>
+                </button>
+
+                </div>  
                 </div>
 
             </div>
@@ -967,7 +972,12 @@
 
     </footer>
 
-
+    <button id="topButton" class="hidden fixed bottom-5 right-5 bg-[#265A8D] text-white p-3 rounded-full shadow-lg hover:bg-[#265A8D] transition">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-5 left-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
