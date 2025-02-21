@@ -2,6 +2,71 @@
 
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const slider = document.querySelector(".bg-image-slider");
+//     const title = document.getElementById("slider-title");
+//     const text = document.getElementById("slider-text");
+
+//     if (!slider || !title || !text) {
+//         console.error("One or more elements not found! Check your HTML structure.");
+//         return;
+//     }
+
+//     const slides = [
+//         {
+//             image: "./assets/slider-img-1.png",
+//             title: "PRINTER REPAIR & MAINTENANCE SERVICES",
+//             text: "We sell a huge range of colour and mono laser and multi-function printers, scanners, wide format plotters, plus consumables, spare parts, and accessories."
+//         },
+//         {
+//             image: "./assets/slider-img-2.jpg",
+//             title: "PLOTTER SALES, SERVICE & REPAIRING",
+//             text: "Discover the best quality printers and scanners for your home and office needs. Get affordable prices and fast delivery. Spare parts, and accessories."
+//         },
+//         {
+//             image: "./assets/slider-img-3.jpg",
+//             title: "OFFICE COPIER / PRINTER LEASE / RENTAL",
+//             text: "We provide genuine spare parts and consumables for a variety of printer models, ensuring smooth and long-lasting performance. Printer Lease And Rental"
+//         },
+//         {
+//             image: "./assets/slider-img-4.jpg",
+//             title: "OFFICE EQUIPMENTS SUPPLIER IN Atlanta",
+//             text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions. Equipments Supplier in  Atlanta"
+//         }
+//     ];
+
+//     let index = 0;
+
+//     function changeSlide() {
+//         // Add fade-out effect
+//         slider.classList.add("fade-out");
+//         title.classList.remove("text-fade-in");
+//         text.classList.remove("text-fade-in");
+//         title.classList.add("text-fade");
+//         text.classList.add("text-fade");
+
+//         setTimeout(() => {
+//             // Update slide content
+//             slider.style.backgroundImage = `url('${slides[index].image}')`;
+//             title.textContent = slides[index].title;
+//             text.textContent = slides[index].text;
+
+//             // Remove fade-out and add fade-in effect
+//             slider.classList.remove("fade-out");
+//             title.classList.remove("text-fade");
+//             text.classList.remove("text-fade");
+//             title.classList.add("text-fade-in");
+//             text.classList.add("text-fade-in");
+
+//             index = (index + 1) % slides.length;
+//         }, 5000);
+//     }
+
+//     // Start the slider
+//     changeSlide();
+//     setInterval(changeSlide, 14000);
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".bg-image-slider");
     const title = document.getElementById("slider-title");
@@ -31,40 +96,42 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "./assets/slider-img-4.jpg",
             title: "OFFICE EQUIPMENTS SUPPLIER IN Atlanta",
-            text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions. Equipments Supplier in  Atlanta"
+            text: "Our team of experts is ready to assist with all your technical needs, offering reliable support and maintenance solutions. Equipments Supplier in Atlanta"
         }
     ];
 
     let index = 0;
 
     function changeSlide() {
-        // Add fade-out effect
+        // Apply fade-out effect
         slider.classList.add("fade-out");
-        title.classList.remove("text-fade-in");
-        text.classList.remove("text-fade-in");
-        title.classList.add("text-fade");
-        text.classList.add("text-fade");
+        title.classList.replace("text-fade-in", "text-fade");
+        text.classList.replace("text-fade-in", "text-fade");
 
         setTimeout(() => {
-            // Update slide content
+            // Update slide content after fade-out completes
             slider.style.backgroundImage = `url('${slides[index].image}')`;
             title.textContent = slides[index].title;
             text.textContent = slides[index].text;
 
-            // Remove fade-out and add fade-in effect
+            // Apply fade-in effect
             slider.classList.remove("fade-out");
-            title.classList.remove("text-fade");
-            text.classList.remove("text-fade");
-            title.classList.add("text-fade-in");
-            text.classList.add("text-fade-in");
+            title.classList.replace("text-fade", "text-fade-in");
+            text.classList.replace("text-fade", "text-fade-in");
 
             index = (index + 1) % slides.length;
-        }, 5000);
+        }, 4000); // Match with fade-out transition time (4s)
     }
 
-    // Start the slider
-    changeSlide();
-    setInterval(changeSlide, 14000);
+    // Immediately set the first slide before interval starts
+    slider.style.backgroundImage = `url('${slides[0].image}')`;
+    title.textContent = slides[0].title;
+    text.textContent = slides[0].text;
+    title.classList.add("text-fade-in");
+    text.classList.add("text-fade-in");
+
+    // Start automatic slide change
+    setInterval(changeSlide, 16000); // Reduced from 14s to maintain smooth flow
 });
 
 

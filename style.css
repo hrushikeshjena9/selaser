@@ -44,7 +44,7 @@ h3 {
  
 
 
-.bg-image-slider {
+/* .bg-image-slider {
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -58,14 +58,14 @@ h3 {
   opacity: 0;
   transform: scale(1.1); 
   filter: blur(8px) hue-rotate(10deg);
-  transition: opacity 6s ease, transform 5s ease, filter 4s ease;
+  transition: opacity 6s ease-in-out, transform 5s ease, filter 4s ease;
 }
 
 
 .text-fade {
   opacity: 0;
   transform: translateX(0); 
-  transition: opacity 10s ease-in-out, transform 6s ease-in-out;
+  transition: opacity 6s ease-in-out, transform 6s ease-in-out;
 }
 
 .text-fade-in {
@@ -77,7 +77,45 @@ h3 {
 @keyframes smooth-fade-in {
   0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+.bg-image-slider {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 4s ease-in-out, transform 4s ease-in-out;
+  will-change: opacity, transform;
+}
+
+.fade-out {
+  opacity: 0.02;
+  transform: scale(1.05); 
+  filter: blur(6px) hue-rotate(10deg);
+  transition: opacity 4s ease-in-out, transform 4s ease, filter 3.5s ease;
+}
+
+.text-fade {
+  opacity: 0.02;
+  transform: translateX(10px); 
+  transition: opacity 4s ease-in-out, transform 4s ease-in-out;
+}
+
+.text-fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  animation: smooth-fade-in 4s ease-in-out;
+}
+
+@keyframes smooth-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
