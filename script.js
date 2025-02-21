@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
             text.classList.add("text-fade-in");
 
             index = (index + 1) % slides.length;
-        }, 2000);
+        }, 5000);
     }
 
     // Start the slider
     changeSlide();
-    setInterval(changeSlide, 5000);
+    setInterval(changeSlide, 10000);
 });
 
 
