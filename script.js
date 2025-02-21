@@ -130,8 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
     title.classList.add("text-fade-in");
     text.classList.add("text-fade-in");
 
-    // Start automatic slide change
-    setInterval(changeSlide, 16000); // Reduced from 14s to maintain smooth flow
+    changeSlide();
+    setInterval(changeSlide, 14000); // Reduced from 14s to maintain smooth flow
 });
 
 
