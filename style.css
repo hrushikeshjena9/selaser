@@ -53,10 +53,6 @@ h3 {
   will-change: opacity, transform;
 }
 
-/* .fade-out {
-  opacity: 0;
-  transform: scale(1.1); 
-} */
 
 .fade-out {
   opacity: 0;
