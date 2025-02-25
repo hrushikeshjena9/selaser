@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.ico">
+
+    <title>SE Laser</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.0/cdn.min.js" defer></script>
+</head>
+</head>
+
+<body class="bg-gray-100 ">
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+
+
+        <div class="container px-4 mx-auto py-4 hidden sm:block">
+            <div class="flex flex-col lg:flex-row justify-between items-center ">
+
+
+                <p class="font-light uppercase w-full lg:text-left sm:w-auto mb-4 sm:mb-0">Reliable Printer Solutions
+                    in Metro Atlanta.</p>
+
+
+                <div class="flex flex-wrap justify-between sm:space-x-6  px-4 font-light w-full sm:w-auto">
+                    <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                        <i class="fa-solid fa-phone text-black-500"></i>
+                        <span>770-682-1655</span>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-4 sm:mb-0 uppercase">
+                        <i class="fa-solid fa-location-dot text-black-500"></i>
+                        <span>#C4 Norcross, GA 30093</span>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                        <i class="fa-solid fa-clock text-black-500"></i>
+                        <span>9.00 am to 5.00 pm</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="flex justify-between items-center container px-4 mx-auto pb-4">
+            <div class="flex items-center">
+                <a href="index.html">
+
+                    <img src="/assets/logo.png" alt="SE Laser Logo" class="h-12 sm:h-20">
+                </a>
+            </div>
+
+
+            <nav class="hidden lg:block py-3">
+                <ul class="flex space-x-2 xl:space-x-12 font-light">
+                    <li><a href="index.html"
+                            class="hover:bg-[#265A8D] px-4 py-4 hover:text-white hover:font-medium">HOME</a></li>
+                    <li><a href="#" class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white hover:font-medium">ABOUT</a>
+                    </li>
+                    <div class="relative group">
+
+
+                        <a href="#"
+                            class=" hover:bg-[#265A8D] hover:font-medium no-wrap  px-4 py-4 hover:text-white">OUR
+                            SERVICES
+
+                            <i class="fa-solid fa-chevron-down ml-2 "></i>
+                        </a>
+
+                        </li>
+
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-auto min-w-[750px] pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+                            <div
+                                class="max-w-6xl mx-auto bg-gray-100 opacity-90  relative before:content-[''] before:absolute before:top-0 before:left-[-300%] before:w-[300%] before:h-full before:bg-gray-100 before:opacity-90 after:content-[''] after:absolute after:top-0 2xl:after:right-[-22%] lg:after:right-[-10%] xl:after:right-[-19%] after:w-[300%] after:h-full after:bg-gray-100 after:opacity-90 ">
+
+                                <div class="flex justify-center items-center">
+                                    <img src="/assets/our-services-menu.png" alt="Discussion" class="w-52 z-50">
+                                    <div class="px-6 py-12  pb-16 z-20">
+
+                                        <div class="dropdown relative pb-3">
+                                            <h3
+                                                class="font-light hoverdrop text-gray-700 pb-3 hover:font-medium flex items-center cursor-pointer">
+
+                                                Buy Office Equipment
+                                                <span class="ml-2 transition-transform duration-300 -rotate-90">
+                                                    ▼
+                                                </span>
+                                            </h3>
+
+
+
+
+                                            <ul
+                                                class="absolute cursor-pointer left-full top-0 ml-2 w-64 transition-all duration-300">
+                                                <li>
+                                                    <a href="buy-copiers-and-printers.html"
+                                                        class="block px-5 py-3 hoverdrop hover:font-medium  transition-all duration-300">
+                                                        Buy Copiers & Printers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 hoverdrop py-3 hover:font-medium  transition-all duration-300">
+                                                        Office Equipment Supplies
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <h3
+                                            class="font-light text-gray-700 hoverdrop pb-3 cursor-pointer hover:font-medium">
+                                            Copier Leasing</h3>
+                                        <h3
+                                            class="font-light text-gray-700 pb-3 pt-2 hoverdrop cursor-pointer hover:font-medium">
+                                            Printer Leasing</h3>
+
+                                        <div class="dropdown relative pb-3">
+                                            <h3
+                                                class="font-light text-gray-700 hoverdrop pb-2 flex pt-2 pb-3 hover:font-medium items-center cursor-pointer">
+                                                Repair Services
+                                                <span class="ml-2 transition-transform duration-300 -rotate-90">
+                                                    ▼
+                                                </span>
+                                            </h3>
+                                            <ul
+                                                class="absolute left-full cursor-pointer top-0 ml-2  w-64 opacity-0 invisible transition-all duration-300">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 py-3 hoverdrop hover:font-medium transition-all duration-300">
+                                                        Copiers Repair
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-5 py-3 hoverdrop hover:font-medium  transition-all duration-300">
+                                                        Printer Repair
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <li><a href="Insights.html"
+                            class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white hover:font-medium">INSIGHTS</a>
+                    </li>
+                    <li><a href="faq.html"
+                            class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white hover:font-medium">FAQ</a></li>
+                    <li><a href="contact.html"
+                            class=" hover:bg-[#265A8D] px-4 py-4 hover:text-white hover:font-medium">CONTACT</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="lg:hidden flex items-center">
+                <button id="hamburger" class="text-gray-600 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobileMenu"
+                class="lg:hidden fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform -translate-y-full transition-transform duration-300 ease-in-out">
+                <button id="closeMenu" class="absolute top-4 right-4 text-gray-600">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <ul class="space-y-4 py-6 px-6 text-center">
+                    <li><a href="index.html"
+                            class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">HOME</a>
+                    </li>
+                    <li><a href="#" class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">ABOUT</a>
+                    </li>
+                    <li><a href="#" class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">OUR
+                            SERVICES</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">INSIGHTS</a></li>
+                    <li><a href="#" class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">FAQ</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-gray-600 block hover:bg-[#265A8D] px-4 py-4 hover:text-white">CONTACT</a></li>
+                </ul>
+
+                <div class="flex flex-col lg:flex-row justify-between items-center sm:hidden block">
+                    <div
+                        class="flex flex-col justify-center items-center sm:space-x-6  px-4 font-light w-full sm:w-auto">
+                        <div class="flex items-center space-x-2 mb-4 lg:mb-0">
+                            <i class="fa-solid fa-phone text-black-500"></i>
+                            <span>770-682-1655</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mb-4 lg:mb-0 uppercase">
+                            <i class="fa-solid fa-location-dot text-black-500"></i>
+                            <span>#C4 Norcross, GA 30093</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mb-4 lg:mb-0">
+                            <i class="fa-solid fa-clock text-black-500"></i>
+                            <span>9.00 am to 5.00 pm</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+        </div>
+
+
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-our-services text-white text-center ">
+        <div class="bg-gradient py-16 px-4">
+            <h1
+                class="text-xl sm:text-2xl md:text-3xl xl:text-4xl text-center mb-2  font-bold py-6 uppercase text-black">
+                Contact Us</h1>
+
+            <p class="mt-2 text-lg text-gray-900 ">For Printer Repair Service Request call
+                <span class="text-xl font-bold hover:underline cursor-pointer hover:text-[#265A8D]">
+
+
+                    770-682-1655
+                </span>
+                We Provide Quick, Affordable Onsite Printer Repair & Reliable Service.
+            </p>
+
+
+            <div class="flex justify-center mt-4 py-6">
+                <button
+                    class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group  shadow-lg flex items-center justify-center sm:text-lg text-sm w-auto   px-6">
+                    <span
+                        class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                    <span class="relative text-white flex items-center"> Request a Call</span>
+                    <div class="relative separator"></div>
+                    <i class="relative fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class=" container mx-auto px-4  py-12">
+        <!-- Contact Details -->
+        <div class="grid md:grid-cols-4 gap-6 py-6">
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg  flex items-center space-x-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full text-3xl">
+
+                    <i class="relative fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">Address</h4>
+                    <p class="text-gray-600">6500 McDonough Dr #C4, Norcross, GA 30093</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full text-3xl">
+
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                    <p class="text-gray-600">info@selaser.com</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full text-3xl">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">Phone</h4>
+                    <p class="text-gray-600">770-682-1655</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full text-3xl">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">Business Hours</h4>
+                    <p class="text-gray-600">Monday to Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center gap-12">
+            <div class="bg-white p-8 w-full w-1/2 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Us</h3>
+                <form class="space-y-5">
+                    <div>
+                        <label class="block text-gray-700 font-medium">Full Name</label>
+                        <input type="text" placeholder="Enter your name"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium">Email Address</label>
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium">Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium">Service Required</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                            <option>Select a service</option>
+                            <option>Printer Repair</option>
+                            <option>Copier Leasing</option>
+                            <option>Supplies</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium">Message</label>
+                        <textarea placeholder="Write your message"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium">12 + 5 =</label>
+                        <input type="text" placeholder="Enter the answer"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <button
+                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group  shadow-lg flex items-center justify-center sm:text-lg text-sm w-auto   px-6">
+                        <span
+                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-white flex items-center"> Submit</span>
+                        <div class="relative separator"></div>
+                        <i class="relative fa-solid fa-plus"></i>
+                    </button>
+                </form>
+            </div>
+
+
+
+
+            <div class="w-2/3">
+
+                <img src="/assets/printer.png" alt="">
+            </div>
+
+
+
+
+        </div>
+        <div class="py-12 about-class container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+                <!-- Text Content -->
+                <div class="w-full text-center sm:text-left">
+                    <h2 class="text-xl sm:text-2xl font-semibold uppercase text-gray-800 mb-4">
+                        Location
+                    </h2>
+                    <p class="text-base text-gray-600 mb-6">
+                        Get in touch with us for any inquiries or support. We are here to help you.
+                    </p>
+                    <button
+                        class="btn relative uppercase font-semibold text-white transition-all duration-300 ease-in-out overflow-hidden group  shadow-lg flex items-center justify-center sm:text-lg text-sm w-auto   px-6">
+                        <span
+                            class="absolute inset-0 w-0 h-full bg-[#265A8D] transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                        <span class="relative text-white flex items-center"> Contact Us Now</span>
+                        <div class="relative separator"></div>
+                        <i class="relative fa-solid fa-plus"></i>
+                    </button>
+                </div>
+
+                <!-- Map Section -->
+                <div class="w-full flex justify-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.354741161828!2d-84.18532822446455!3d33.91568147324665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a6eaf26c7d0d%3A0xf7e265a9e0d614ae!2s6500%20McDonough%20Dr%20%23C4%2C%20Norcross%2C%20GA%2030093%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000"
+                        style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full max-w-4xl h-[300px] rounded-md shadow-lg">
+                    </iframe>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <footer class="mmm mt-10 ">
+        <div class=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-lg">
+
+            <div class="py-14 px-5">
+                <div class="flex justify-center md:justify-start items-center space-x-2">
+                    <img src="/assets/logo.png" alt="SE LASER" class="h-16">
+                </div>
+                <p class="mt-4 text-base text-gray-900 text-justify font-regular">
+                    Offer onsite printer repair
+                    and maintenance services to fix your Printer, so
+                    you can use your machine efficiently and
+                    effectively. We lease well-known, trusted brands
+                    such as Ricoh, Sharp, and Konica to our
+                    customers for 25 years.
+                </p>
+
+            </div>
+
+
+            <div class="bg-[#ECECED] py-14">
+                <h3 class="text-xl sm:text-2xl  font-bold text-center mb-4">QUICK LINKS</h3>
+                <div class="flex justify-center items-center">
+
+
+
+
+                    <ul class="mt-4 space-y-2 text-base font-medium">
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Buy Copiers & Printers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Copier Repair
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Printer Repair
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Copier Leasing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Printer Leasing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Office Equipment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-gray-700 transition duration-300 ease-in-out transform hover:translate-x-2 hover:text-[#265A8D]">
+                                <i class="fas fa-arrow-right"></i> Supplies
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="bg-[#F3F3F3] py-14">
+                <h3 class="text-xl sm:text-2xl  font-bold text-center mb-4">CONTACT US</h3>
+
+                <div class="flex justify-center items-center">
+                    <div class="font-medium text-base">
+                        <p
+                            class="mt-4 flex items-center gap-4 cursor-pointer transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                <span class="flex flex-col">
+                                    6500 McDonough Dr,
+                                </span>
+                                <span>
+                                    #C4 Norcross, GA 30093
+                                </span>
+                            </span>
+                        </p>
+                        <p
+                            class="mt-2 flex items-center mt-4 cursor-pointer gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-phone"></i> 770-682-1655
+                        </p>
+                        <p
+                            class="mt-2 flex items-center mt-4 cursor-pointer gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-envelope"></i> info@selaser.com
+                        </p>
+                        <p
+                            class="mt-2 flex items-center cursor-pointer mt-4 gap-4 transition duration-300 ease-in-out hover:text-[#265A8D]">
+                            <i class="fas fa-clock"></i>
+                            <span>
+                                <span class="flex flex-col">
+                                    Monday to Friday
+                                </span>
+                                <span>
+                                    9:00 am - 5:00 pm
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-[#F8F8F9] py-14 px-6">
+                <h3 class="text-xl sm:text-2xl font-bold text-center mb-4 uppercase">gET IN tOUCH</h3>
+                <div class="flex justify-center items-center font-medium text-base">
+                    <div class="text-center">
+
+                        <p class="mt-4 flex  items-center space-x-2 mb-6 ">Do you have any queries or
+                            comments about our
+                            website, our
+                            products or any of our services?</p>
+                        <p class="mt-2  ">Call <span
+                                class="text-black font-bold transition duration-300 ease-in-out hover:text-[#265A8D] hover:underline cursor-pointer">770-682-1655</span>
+                            or use our
+                            online form for a fast and free quote.</p>
+
+                        <div class="mt-4 ">
+
+                            <a class=" hover:underline  font-bold mt-10 text-[#265A8D] transition duration-300"
+                                href="#">
+                                CLICK HERE
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#265A8D] py-4">
+            <div class="flex flex-col sm:flex-row   justify-between items-center container mx-auto px-4 text-white">
+                <div class="text-gray-100 text-sm text-center sm:text-left font-medium mb-4 sm:mb-0">Copyrights &copy;
+                    <span id="year"></span> All Rights
+                    Reserved By
+                    <span class="text-sm md:text-lg font-bold uppercase ml-2"> Southeast Laser</span>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-100 transition duration-300 ease-in-out hover:text-white">
+                        <span
+                            class="w-10 h-10 border-2 border-white flex justify-center items-center rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-blue-800">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-100 transition duration-300 ease-in-out hover:text-white">
+                        <span
+                            class="w-10 h-10 border-2 border-white flex justify-center items-center rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-blue-500">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-100 transition duration-300 ease-in-out hover:text-white">
+                        <span
+                            class="w-10 h-10 border-2 border-white flex justify-center items-center rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-blue-600">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <button id="topButton"
+        class="hidden fixed bottom-5 right-5 bg-[#265A8D] text-white p-3 rounded-full shadow-lg hover:bg-[#605c5b] transition">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/1234567890" target="_blank"
+        class="fixed bottom-5 left-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"> </script>
+</body>
+
+</html>
